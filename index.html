@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Бурый медведь</title>
+<style>
+  :root { color-scheme: light dark; }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background: #f4f1ea;
+    color: #2b241c;
+  }
+  .card {
+    width: min(760px, 100%);
+    background: #fff;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 18px 60px rgba(60, 45, 25, .18);
+  }
+  img { display: block; width: 100%; height: auto; }
+  .text { padding: 28px 30px 32px; }
+  h1 { margin: 0 0 12px; font-size: 30px; line-height: 1.2; }
+  p { margin: 0; font-size: 17px; line-height: 1.6; color: #4d4335; }
+  .credit { margin-top: 18px; font-size: 12px; line-height: 1.4; color: #8a7c68; }
+  .credit a { color: inherit; }
+  @media (prefers-color-scheme: dark) {
+    body { background: #17140f; color: #f2ece1; }
+    .card { background: #221d16; box-shadow: none; }
+    p { color: #cfc4b2; }
+  }
+</style>
+</head>
+<body>
+  <main class="card">
+    <img src="bear.jpg" alt="Бурый медведь в лесу">
+    <div class="text">
+      <h1>Бурый медведь</h1>
+      <p>Крупный хищник семейства медвежьих, хозяин северных лесов. Всеяден:
+        ест ягоды, коренья, рыбу и мелких животных. Отличный пловец и бегун,
+        зиму проводит в берлоге. Взрослый самец весит до 400 килограммов.</p>
+      <p class="credit">Фото: Robert F., <a href="https://commons.wikimedia.org/wiki/File:Kamchatka_Brown_Bear_near_Dvuhyurtochnoe_on_2015-07-23.jpg">Wikimedia Commons</a>, CC BY-SA 4.0</p>
+    </div>
+  </main>
+</body>
+</html>
